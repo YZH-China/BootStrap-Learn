@@ -1,0 +1,296 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<title>表单</title>
+</head>
+<body>
+<div class="container">
+	<h4>普通表单（竖直表单）</h4>
+	<form role="form">
+		<div class="form-group">
+			<label for="name">名称</label>
+			<input type="text" planceholder="请输入名称" class="form-control" id="name">
+		</div>
+		<div class="form-group">
+			<label for="inputfile">文件输入</label>
+			<input type="file" id="inputfile" class="form-control">
+		</div>
+		<div class="form-group">
+			<label>
+				<input type="checkbox">请打勾
+			</label>
+		</div>
+		<button type="submit" class="btn btn-default">提交</button>
+	</form>
+
+	<!-- ===================================== -->
+	<!-- ===================================== -->
+	<br>
+	<!-- ===================================== -->
+	<!-- ===================================== -->
+
+	<h4>内联表单</h4>
+	<form class="form-inline" role="form">
+		<div class="form-group">
+			<label for="name">名称</label>
+			<input type="text" planceholder="请输入名称" class="form-control" id="name">
+		</div>
+		<div class="form-group">
+			<label for="inputfile">文件输入</label>
+			<input type="file" id="inputfile" class="form-control">
+		</div>
+		<div class="form-group">
+			<label>
+				<input type="checkbox">请打勾
+			</label>
+		</div>
+		<button type="submit" class="btn btn-default">提交</button>
+	</form>
+
+	<!-- ===================================== -->
+	<!-- ===================================== -->
+	<br>
+	<!-- ===================================== -->
+	<!-- ===================================== -->
+
+	<h4>水平表单</h4>
+	<form class="form-horizontal">
+		<div class="form-group">
+			<label for="firstname" class="col-md-2 col-xs-2 control-label">名字</label>
+			<div class="col-md-10 col-xs-10">
+				<input type="text" placeholder="请输入名字" class="form-control" id="firstname">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="lastname" class="col-xs-2 col-md-2 control-label">姓</label>
+			<div class="col-md-10 col-xs-10">
+				<input type="text" placeholder="请输入姓" class="form-control" id="lastname">
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="col-xs-offset-2 col-xs-10">
+				<div class="checkbox">
+					<label>
+						<input type="checkbox">请记住我
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="form-group">
+			<button type="submit" class="btn btn-default">登录</button>
+		</div>
+	</form>
+
+	<!-- ===================================== -->
+	<!-- ===================================== -->
+	<br>
+	<!-- ===================================== -->
+	<!-- ===================================== -->
+
+	<h4>单选框和复选框</h4>
+	<label>默认的形式</label>
+	<div class="chechbox">
+		<label>
+			<input type="checkbox">选项一
+		</label>
+	</div>
+	<div class="chechbox">
+		<label>
+			<input type="checkbox">选项二
+		</label>
+	</div>
+	<div class="radio">
+		<label>
+			<input type="radio" name="optionsRadio" value="options1" checked="true" id="optionsRadios1">选项一
+		</label>
+	</div>
+	<div class="radio">
+		<label>
+			<input type="radio" name="optionsRadio" value="options2" id="optionsRadios2">选项二
+		</label>
+	</div>
+	<label for="name">内联的复选框和单选按钮</label>
+	<div>
+		<label class="checkbox-inline">
+			<input type="checkbox" value="option1" id="inlineCheckbox1">选项1
+		</label>
+		<label class="checkbox-inline">
+			<input type="checkbox" value="option2" id="inlineCheckbox2">选项2
+		</label>
+		<label class="checkbox-inline">
+			<input type="checkbox" value="option3" id="inlineCheckbox3">选项3
+		</label>
+		<label class="checkbox-inline">
+			<input type="radio" value="option1" name="optionsRadiosinline" id="optionsRadios3">选项一
+		</label>
+		<label class="checkbox-inline">
+			<input type="radio" value="option2" name="optionsRadiosinline" id="optionsRadios4">选项二
+		</label>
+	</div>
+
+	<!-- ===================================== -->
+	<!-- ===================================== -->
+	<br>
+	<!-- ===================================== -->
+	<!-- ===================================== -->
+
+	<h4>下拉框</h4>
+	<form role="form">
+		<div class="form-group">
+			<label for="name">选择列表</label>
+			<select class="form-control">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</select>
+			<label for="name">多选下拉框</label>
+			<select multiple="3" class="form-control">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</select>
+		</div>
+	</form>
+
+	<!-- ===================================== -->
+	<!-- ===================================== -->
+	<br>
+	<!-- ===================================== -->
+	<!-- ===================================== -->
+
+	<form role="fomr" class="form-horizontal">
+		<div class="form-group">
+			<label class="col-sm-2 control-label">Email</label>
+			<div class="col-sm-10">
+				<p class="form-control-static">email@example.com</p>
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="inputPassword" class="col-sm-2 control-label">密码</label>
+			<div class="col-sm-10">
+				<input type="password" placeholder="请输入密码" class="form-control" id="inputPassword">
+			</div>
+		</div>
+	</form>
+
+	<!-- ===================================== -->
+	<!-- ===================================== -->
+	<br>
+	<!-- ===================================== -->
+	<!-- ===================================== -->
+
+	<form role="from" class="form-horizontal">
+		<div class="form-group">
+			<label for="focusInput" class="col-sm-2 control-label">聚焦</label>
+			<div class="col-sm-10">
+				<input type="text" placeholder="改输入框获得焦点" class="form-control" id="focusInput">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="disabledInput" class="control-label col-sm-2">禁用</label>
+			<div class="col-sm-10">
+				<input type="text" placeholder="该文本框禁止输入" disabled class="form-control" id="disabledInput">
+			</div>
+		</div>
+		<fieldset disabled>
+			<div class="form-group">
+				<label for="disabledTextInput" class="col-sm-2 control-label">禁用输入</label>
+				<div class="col-sm-10">
+					<input type="text" placeholder="禁止输入" class="form-control" id="disabledTextInput">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="disabledselect" class="control-label col-sm-2">禁用下拉框</label>
+				<div class="col-sm-10">
+					<select name="disabledselect" id="disabledselect" class="form-control">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+					</select>
+				</div>
+			</div>
+		</fieldset>
+		<div class="form-group has-success">
+			<lable for="inputSuccess" class="control-label col-sm-2">输入成功</lable>
+			<div class="col-sm-10">
+				<input type="text" placeholder="成功" class="form-control" id="inputSuccess">
+			</div>
+		</div>
+		<div class="form-group has-warning">
+			<label for="inputWraning" class="col-sm-2 control-label">输入警告</label>
+			<div class="col-sm-10"><input type="text" placeholder="警告" class="form-control" id="inputWraning"></div>
+		</div>
+		<div class="form-group has-error">
+			<label for="inputError" class="control-label col-sm-2">输入失败</label>
+			<div class="col-sm-10"><input type="text" placeholder="失败" class="form-control" id="inputError"></div>
+		</div>
+	</form>
+
+	<!-- ===================================== -->
+	<!-- ===================================== -->
+	<br>
+	<!-- ===================================== -->
+	<!-- ===================================== -->
+
+	<form role="form">
+		<div class="form-group">
+			<input type="text" placeholder=".input-lg" class="form-control input-lg">
+		</div>
+		<div class="form-group">
+			<input type="text" placeholder="默认输入框" class="form-control">
+		</div>
+		<div class="form-group">
+			<input type="text" placeholder=".input-sm" class="form-control input-sm">
+		</div>
+		<div class="form-group"></div>
+		<div class="form-group">
+			<select class="form-control input-lg">
+				<option value="1">".input-lg"</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<select class="form-control">
+				<option value="1">"默认的大小"</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<select class="form-control input-sm">
+				<option value="1">.input-sm</option>
+			</select>
+		</div>
+		<div class="row">
+			<div class="col-lg-2">
+				<input type="text" placeholder=".col-lg-2" class="form-control">
+			</div>
+			<div class="col-lg-3">
+				<input type="text" placeholder=".col-lg-3" class="form-control">
+			</div>
+			<div class="col-lg-4">
+				<input type="text" placeholder=".col-lg-4" class="form-control">
+			</div>
+		</div>
+	</form>
+
+	<!-- ===================================== -->
+	<!-- ===================================== -->
+	<br>
+	<!-- ===================================== -->
+	<!-- ===================================== -->
+
+	<form role="form">
+		<span>帮助文本实例</span>
+		<input type="text" placeholder="" class="form-control">
+		<span class="help-block">一个教程的帮助文本块，超过一行时，需要扩展到下一行。本实例中的帮助文本总共有两行</span>
+	</form>	
+</div>
+</body>
+</html>

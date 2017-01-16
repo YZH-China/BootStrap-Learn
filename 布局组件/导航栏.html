@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>导航栏</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+<!-- 默认导航栏 -->
+<div class="container" style="height: 1700px">
+<nav class="navbar navbar-default" role="navigation">
+	<div class="container-fluid">
+		<div class="navbar-header"><a href="#" class="navbar-brand">导航头</a></div>
+		<div>
+		<ul class="nav navbar-nav">
+			<li class="active"><a href="#">iOS</a></li>
+			<li><a href="#">SVN</a></li>
+			<li class="dropdown">
+				<a href="#" class="dropdown-togglo" data-toggle="dropdown">Java<i class="caret"></i></a>
+				<ul class="dropdown-menu">
+					<li><a href="#">jmeter</a></li>
+					<li><a href="#">EJB</a></li>
+					<li><a href="#">Jasper Report</a></li>
+					<li class="divider"></li>
+					<li><a href="#">分离连接</a></li>
+					<li class="divider"></li>
+					<li><a href="#">另一个分离连接</a></li>
+				</ul>
+			</li>
+		</ul>
+		</div>
+	</div>
+</nav>
+
+<hr>
+
+<!-- 响应式导航控件 -->
+<nav class="navbar navbar-default" role="navigation">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button class="navbar-toggle" data-toggle="collapse" data-target="#example-anvbar-collapse">
+				<span class="sr-only">切换导航</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">响应式导航栏</a>
+		</div>
+		<div class="collapse navbar-collapse" id="example-anvbar-collapse">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#">iOS</a></li>
+				<li><a href="#">SVN</a></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Java<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">jmeter</a></li>
+						<li><a href="#">EJB</a></li>
+						<li><a href="#">Jasper Report</a></li>
+						<li class="divider"></li>
+						<li><a href="#">分离连接一</a></li>
+						<li class="divider"></li>
+						<li><a href="#">分离连接二</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<hr>
+
+<!-- 导航栏中的表单 -->
+<nav class="navbar navbar-default navbar-fixed-bottom navbar-inverse" role="naviagtion">
+<div class="container-fluid">
+	<div class="navbar-header"><a href="#" class="navbar-brand">导航栏中的表单</a></div>
+	<div>
+		<p class="navbar-text">导航栏中的文本</p>
+	</div>
+	<div>
+		<form role="search" class="navbar-form navbar-left">
+			<div class="form-group"><input type="text" placeholder="Search" class="form-control"></div>
+			<button class="btn btn-default">提交</button>
+		</form>
+		<button class="btn navbar-btn btn-default">不在form中的导航栏按钮</button>
+	</div>
+</div>
+</nav>
+
+<hr>
+
+<!-- 结合图标的导航连接 -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+<div class="container-fluid">
+	<div class="navbar-header">
+		<a href="#" class="navbar-brand">带图标的导航</a>
+	</div>
+	<div>
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="#" ><span class="glyphicon glyphicon-user"></span>注册</a></li>
+			<li><a href="#"><span class="glyphicon glyphicon-log-in"></span>登录</a></li>
+		</ul>
+	</div>
+</div>
+</nav>
+</div>
+<script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+</body>
+</html>

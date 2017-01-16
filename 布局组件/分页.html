@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>分页</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+	<!-- 添加pagination显示分页 -->
+	<ul class="pagination">
+		<li><a href="#">&laquo;</a></li>
+		<li><a href="#">1</a></li>
+		<li><a href="#">2</a></li>
+		<li><a href="#">3</a></li>
+		<li><a href="#">4</a></li>
+		<li><a href="#">&raquo;</a></li>
+	</ul>
+
+	<hr>
+
+	<!-- 通过.disabled禁用连接，.active指示当前页 -->
+	<ul class="pagination">
+		<li><a href="#">&laquo;</a></li>
+		<li class="disabled"><a href="#">1</a></li>
+		<li><a href="#">2</a></li>
+		<li class="active"><a href="#">3</a></li>
+		<li><a href="#">4</a></li>
+		<li><a href="#">&raquo;</a></li>
+	</ul>
+
+	<hr>
+
+	<!-- .pagination-lg/sm获取不同大小分页 -->
+	<ul class="pagination pagination-lg">
+		<li><a href="#">&laquo;</a></li>
+		<li><a href="#">1</a></li>
+		<li><a href="#">2</a></li>
+		<li><a href="#">&raquo;</a></li>
+	</ul>
+	<ul class="pagination">
+		<li><a href="#">&laquo;</a></li>
+		<li><a href="#">1</a></li>
+		<li><a href="#">2</a></li>
+		<li><a href="#">&raquo;</a></li>
+	</ul>
+	<ul class="pagination pagination-sm">
+		<li><a href="#">&laquo;</a></li>
+		<li><a href="#">1</a></li>
+		<li><a href="#">2</a></li>
+		<li><a href="#">&raquo;</a></li>
+	</ul>
+
+	<hr>
+
+	<!-- 处理翻页.pager -->
+	<ul class="pager">
+		<li><a href="#">Previous</a></li>
+		<li><a href="#">Next</a></li>
+	</ul>
+
+	<!-- .previous把连接向左对齐，.next向右对齐 -->
+	<ul class="pager">
+  		<li class="previous"><a href="#">&larr; Older</a></li>
+  		<li class="next"><a href="#">Newer &rarr;</a></li>
+	</ul>
+
+	<!-- .disabled禁用，用于表示当前页 -->
+	<ul class="pager">
+  		<li class="previous disabled"><a href="#">&larr; Older</a></li>
+  		<li class="next"><a href="#">Newer &rarr;</a></li>
+	</ul>
+</div>
+</body>
+</html>
