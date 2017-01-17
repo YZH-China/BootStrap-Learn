@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Modal</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+	<h2>创建模态框</h2>
+	<!-- 按钮触发模态框 -->
+	<button data-toggle="modal" data-target="#myModal" class="btn btn-primary btn-lg">开始演示模态框</button>
+
+	<!-- 构建模态框 -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labellebby="myModalLabel" aria-hidden="true" data-backdrop="false" data-keyboard="false">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button class="close" data-dismiss="modal" arir-hidden="true">&times;</button>
+					<h4 class="modal-label" id="myModalLabel">模态框标题</h4>
+				</div>
+				<div class="modal-body">这里添加一些内容</div>
+				<div class="modal-footer"><button class="btn btn-default" data-dismiss="modal">关闭</button><button class="btn btn-primary">提交更改</button></div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+</body>
+</html>

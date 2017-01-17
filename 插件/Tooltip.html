@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tooltip</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+	<h4>提示工具（Tooltip）插件————锚</h4>
+	这是一个 <a href="#" class="tooltip-test" data-toggle="tooltip" title="默认的 Tooltip">默认的 Tooltip</a>.
+	这是一个 <a href="#" class="tooltip-test" data-toggle="tooltip" title="左侧的 Tooltip" data-placement="left">左侧的 Tooltip</a>.
+	这是一个 <a href="#" class="tooltip-test" data-toggle="tooltip" title="右侧的 Tooltip" data-placement="right">右侧的 Tooltip</a>.
+	这是一个 <a href="#" class="tooltip-test" data-toggle="tooltip" title="上方的 Tooltip" data-placement="top">上方的 Tooltip</a>.
+	这是一个 <a href="#" class="tooltip-test" data-toggle="tooltip" title="下方的 Tooltip" data-placement="bottom">下方的 Tooltip</a>
+
+	<h4>提示工具（Tooltip）插件 - 按钮</h4>
+<button type="button" class="btn btn-default" data-toggle="tooltip"
+        title="默认的 Tooltip" data-trigger="click">
+    默认的 Tooltip
+</button>
+<button type="button" class="btn btn-default" data-toggle="tooltip"
+        data-placement="left" title="左侧的 Tooltip">
+    左侧的 Tooltip
+</button>
+<button type="button" class="btn btn-default" data-toggle="tooltip"
+        data-placement="top" title="顶部的 Tooltip" data-trigger="focus ">
+    顶部的 Tooltip
+</button>
+<button type="button" class="btn btn-default" data-toggle="tooltip"
+        data-placement="bottom" title="底部的 Tooltip">
+    底部的 Tooltip
+</button>
+<button type="button" class="btn btn-default" data-toggle="tooltip"
+        data-placement="right" title="右侧的 Tooltip" data-delay="500">
+    右侧的 Tooltip
+</button>
+
+<hr>
+
+<input type="text" data-toggle="tooltip" title="默认 tooltip" class="tooltip-test" data-trigger="focus">
+
+<script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script type="text/javascript">
+ $(function(){
+ 	$("[data-toggle='tooltip']").tooltip();
+ })
+</script>
+</body>
+</html>
